@@ -184,7 +184,6 @@ body {
 }
 .landing .heading {
   display: flex;
-  border: 1px solid red;
 }
 .landing .heading div {
   display: flex;
@@ -200,7 +199,7 @@ body {
 }
 .landing .heading div h2 {
   font-size: 4.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .landing .heading div a {
   font-size: 2.5rem;
@@ -215,8 +214,8 @@ body {
 .landing .heading::after {
   content: "";
   position: relative;
-  max-width: 450px;
-  width: 50%;
+  margin-left: -200px;
+  width: 650px;
   height: 450px;
   background: url("../img/laptop.png");
   background-size: contain;
