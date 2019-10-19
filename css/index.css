@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "moon-light";
+  src: url("../fonts/moon-light.otf");
+}
+@font-face {
+  font-family: "moon-bold";
+  src: url("../fonts/moon-bold.otf");
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -119,18 +127,108 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-@font-face {
-  font-family: 'moon-light';
-  src: url('../fonts/moon-light.otf');
+* {
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: 'moon-bold';
-  src: url('../fonts/moon-bold.otf');
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: serif;
+  color: #474e81;
+}
+p {
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+body {
+  width: 100vw;
+}
+.landing {
+  width: 100%;
+  background: #fef3f4;
+}
+.landing .container {
+  position: relative;
+}
+.landing nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+  padding: 5px;
+}
+.landing nav a {
+  color: #e77e48;
+  text-decoration: none;
+  font-family: 'moon-bold', sans-serif;
+  padding: 12px;
+  font-size: 1.7em;
+}
+.landing nav .signup {
+  color: #ffffff;
+  background: #e77e48;
+  background: linear-gradient(141deg, #e87c46 0%, #f0a985 100%);
+  border-radius: 10px;
+}
+.landing .heading {
+  display: flex;
+}
+.landing .heading div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+}
+.landing .heading div h1 {
+  font-size: 6.5rem;
+  font-family: "moon-bold";
+  color: #e77e48;
+  margin-bottom: 15px;
+}
+.landing .heading div h2 {
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+}
+.landing .heading div a {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background: #e77e48;
+  background: linear-gradient(141deg, #e87c46 0%, #f0a985 100%);
+  font-family: 'moon-bold', sans-serif;
+  border-radius: 10px;
+  padding: 17px;
+  text-decoration: none;
+}
+.landing .heading::after {
+  content: "";
+  position: relative;
+  margin-left: -200px;
+  width: 650px;
+  height: 450px;
+  background: url("../img/laptop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.features {
+  width: 100vw;
+  background: #fed6d1;
+}
+.testimonials {
+  width: 100vw;
+  background: #fef3f4;
 }
