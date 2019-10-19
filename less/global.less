@@ -1,10 +1,31 @@
-@font-face {
-  font-family: "moon-light";
-  src: url("../fonts/moon-light.otf");
+* {
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: "moon-bold";
-  src: url("../fonts/moon-bold.otf");
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: @font-body;
+  color: @color-text;
+}
+p {
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+body {
+  width: 100vw;
 }
 
 * {
