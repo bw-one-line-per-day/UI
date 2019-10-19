@@ -150,6 +150,31 @@ p {
 }
 .container {
   max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+body {
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: serif;
+  color: #474e81;
+}
+p {
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -161,9 +186,6 @@ body {
 .landing {
   width: 100%;
   background: #fef3f4;
-}
-.landing .container {
-  position: relative;
 }
 .landing nav {
   width: 100%;
@@ -225,10 +247,10 @@ body {
   background-repeat: no-repeat;
 }
 .features {
-  width: 100vw;
+  width: 100%;
   background: #fed6d1;
 }
 .testimonials {
-  width: 100vw;
+  width: 100%;
   background: #fef3f4;
 }
