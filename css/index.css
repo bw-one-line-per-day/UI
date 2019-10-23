@@ -257,6 +257,7 @@ footer img {
   width: 100%;
   background: #fef3f4;
 }
+<<<<<<< HEAD
 .testimonials .container {
   position: relative;
 }
@@ -420,4 +421,35 @@ footer img {
   position: absolute;
   left: 430px;
   transform: scaleY(0.7) rotate(45deg);
+=======
+.container {
+  width: 100%;
+}
+.container .flexItems {
+  display: flex;
+  justify-content: space-between;
+}
+.container .flexItems .images {
+  margin-top: 45px;
+}
+.container .flexItems .images img {
+  width: 90%;
+}
+.container .flexItems .captureTheMoment {
+  margin-top: 95px;
+}
+.container .flexItems .captureTheMoment h2 {
+  font-family: "moon-bold", sans-serif;
+  font-size: 4.2rem;
+  color: #e77e48;
+}
+.container .flexItems .captureTheMoment p {
+  color: #474e81;
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: serif;
+  margin-top: 40px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+>>>>>>> 8e5d826c8350a4183b82cdb35aa4d78e59295b5d
 }
