@@ -1,6 +1,9 @@
 .landing {
   width: 100;
   background: @color-background-light;
+  background-image: url(../img/landing_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   nav {
     width: 100%;
@@ -64,14 +67,17 @@
   }
 }
 
-// .features {
-//   width: 100%;
-//   background: @color-background-dark;
-// }
+.features {
+  width: 100%;
+  background: @color-background-dark;
+}
 
 .testimonials {
   width: 100%;
   background: @color-background-light;
+  background-image: url(../img/testimonial_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .container {
     position: relative;
@@ -81,9 +87,14 @@
     font-family: @font-heading;
     color: @color-heading;
     font-size: 4.5rem;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     text-align: center;
   }
+  aside {
+    margin: 20px 70px;
+  }
+
   .testImg {
     width: 115px;
     height: 115px;
@@ -98,10 +109,10 @@
     font-size: 1.4em;
     padding: 20px 10px;
     border-radius: 10px;
+    margin-right: -40px;
   }
 
   .testBlock1 {
-    z-index: 0;
     .testBlock(#dc3766, 15px);
 
     .testImg {
@@ -109,12 +120,12 @@
     }
 
     &::after {
-      .arrow(#dc3766, 430px);
+      .arrow(#dc3766, 40px);
     }
   }
 
   .testBlock2 {
-    z-index: 0;
+    align-self: flex-end;
     .testBlock(#1d8ea3, 15px);
 
     .testImg {
@@ -122,12 +133,11 @@
     }
 
     &::after {
-      .arrow(#1d8ea3, -20px);
+      .arrow(#1d8ea3, -410px);
     }
   }
 
   .testBlock3 {
-    z-index: 0;
     .testBlock(#df522d, 15px);
 
     .testImg {
@@ -135,12 +145,12 @@
     }
 
     &::after {
-      .arrow(#df522d, 430px);
+      .arrow(#df522d, 40px);
     }
   }
 
   .testBlock4 {
-    z-index: 0;
+    align-self: flex-end;
     .testBlock(#67b765, 15px);
 
     .testImg {
@@ -148,12 +158,11 @@
     }
 
     &::after {
-      .arrow(#67b765, -20px);
+      .arrow(#67b765, -410px);
     }
   }
 
   .testBlock5 {
-    z-index: 0;
     .testBlock(#dc3766, 15px);
 
     .testImg {
@@ -161,7 +170,7 @@
     }
 
     &::after {
-      .arrow(#dc3766, 430px);
+      .arrow(#dc3766, 40px);
     }
   }
 }

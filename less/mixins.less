@@ -13,13 +13,14 @@
 
 .testimonialImg(@url) {
   background: url(@url);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 100%;
   border: 5px solid @color-white;
 }
 
 .testBlock(@color, @padding) {
+  z-index: 0;
   height: 150px;
   width: 450px;
   display: flex;
@@ -36,7 +37,7 @@
   width: 40px;
   height: 40px;
   background: @color;
-  position: absolute;
+  position: relative;
   left: @left;
   transform: scaleY(0.7) rotate(45deg);
 }
