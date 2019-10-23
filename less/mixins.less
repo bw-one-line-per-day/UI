@@ -10,3 +10,33 @@
     rgba(240, 169, 133, 1) 100%
   );
 }
+
+.testimonialImg(@url) {
+  background: url(@url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid @color-white;
+}
+
+.testBlock(@color, @padding) {
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: @padding;
+  background: @color;
+  border-radius: 30px;
+}
+
+.arrow(@color, @left) {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: @color;
+  position: absolute;
+  left: @left;
+  transform: scaleY(0.7) rotate(45deg);
+}

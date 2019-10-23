@@ -180,11 +180,18 @@ p {
   flex-direction: column;
   padding-bottom: 30px;
 }
-body {
-  width: 100vw;
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+footer img {
+  padding: 10px;
 }
 .landing {
-  width: 100%;
+  width: 100;
   background: #fef3f4;
 }
 .landing nav {
@@ -197,7 +204,7 @@ body {
 .landing nav a {
   color: #e77e48;
   text-decoration: none;
-  font-family: 'moon-bold', sans-serif;
+  font-family: "moon-bold", sans-serif;
   padding: 12px;
   font-size: 1.7em;
 }
@@ -231,7 +238,7 @@ body {
   color: #ffffff;
   background: #e77e48;
   background: linear-gradient(141deg, #e87c46 0%, #f0a985 100%);
-  font-family: 'moon-bold', sans-serif;
+  font-family: "moon-bold", sans-serif;
   border-radius: 10px;
   padding: 17px;
   text-decoration: none;
@@ -246,11 +253,171 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.features {
-  width: 100%;
-  background: #fed6d1;
-}
 .testimonials {
   width: 100%;
   background: #fef3f4;
+}
+.testimonials .container {
+  position: relative;
+}
+.testimonials h2 {
+  font-family: "moon-bold", sans-serif;
+  color: #e77e48;
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.testimonials .testImg {
+  width: 115px;
+  height: 115px;
+}
+.testimonials .testText {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  width: 66%;
+  height: 115px;
+  font-size: 1.4em;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.testimonials .testBlock1 {
+  z-index: 0;
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #dc3766;
+  border-radius: 30px;
+}
+.testimonials .testBlock1 .testImg {
+  background: url("../img/testimonial_1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+.testimonials .testBlock1::after {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: #dc3766;
+  position: absolute;
+  left: 430px;
+  transform: scaleY(0.7) rotate(45deg);
+}
+.testimonials .testBlock2 {
+  z-index: 0;
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #1d8ea3;
+  border-radius: 30px;
+}
+.testimonials .testBlock2 .testImg {
+  background: url("../img/testimonial_2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+.testimonials .testBlock2::after {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: #1d8ea3;
+  position: absolute;
+  left: -20px;
+  transform: scaleY(0.7) rotate(45deg);
+}
+.testimonials .testBlock3 {
+  z-index: 0;
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #df522d;
+  border-radius: 30px;
+}
+.testimonials .testBlock3 .testImg {
+  background: url("../img/testimonial_3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+.testimonials .testBlock3::after {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: #df522d;
+  position: absolute;
+  left: 430px;
+  transform: scaleY(0.7) rotate(45deg);
+}
+.testimonials .testBlock4 {
+  z-index: 0;
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #67b765;
+  border-radius: 30px;
+}
+.testimonials .testBlock4 .testImg {
+  background: url("../img/testimonial_4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+.testimonials .testBlock4::after {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: #67b765;
+  position: absolute;
+  left: -20px;
+  transform: scaleY(0.7) rotate(45deg);
+}
+.testimonials .testBlock5 {
+  z-index: 0;
+  height: 150px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #dc3766;
+  border-radius: 30px;
+}
+.testimonials .testBlock5 .testImg {
+  background: url("../img/testimonial_5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid #ffffff;
+}
+.testimonials .testBlock5::after {
+  content: "";
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background: #dc3766;
+  position: absolute;
+  left: 430px;
+  transform: scaleY(0.7) rotate(45deg);
 }
