@@ -152,6 +152,7 @@ p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 35px;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
@@ -186,6 +187,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 footer img {
   padding: 10px;
@@ -260,6 +262,39 @@ footer img {
   width: 100%;
   background: #fed6d1;
 }
+.features .flexItems {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid orange;
+}
+.features .flexItems .images {
+  border: 1px solid aqua;
+}
+.features .flexItems .images img {
+  width: 100%;
+}
+.features .flexItems .captureTheMoment {
+  width: 65%;
+  text-align: center;
+  border: 1px solid red;
+}
+.features .flexItems .captureTheMoment h2 {
+  font-family: "moon-bold", sans-serif;
+  font-size: 3.8rem;
+  color: #e77e48;
+}
+.features .flexItems .captureTheMoment p {
+  color: #474e81;
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: serif;
+  margin-top: 40px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
 .testimonials {
   width: 100%;
   background: #fef3f4;
@@ -274,12 +309,8 @@ footer img {
   font-family: "moon-bold", sans-serif;
   color: #e77e48;
   font-size: 4.5rem;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 40px 0 50px;
   text-align: center;
-}
-.testimonials aside {
-  margin: 20px 70px;
 }
 .testimonials .testImg {
   width: 115px;
@@ -300,12 +331,20 @@ footer img {
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background: #dc3766;
   border-radius: 30px;
+  transition: 0.2s;
+}
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock1 {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 .testimonials .testBlock1 .testImg {
   background: url("../img/testimonial_1.jpg");
@@ -324,17 +363,37 @@ footer img {
   left: 40px;
   transform: scaleY(0.7) rotate(45deg);
 }
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock1::after {
+    content: "";
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: #dc3766;
+    position: relative;
+    left: 49px;
+    transform: scaleY(0.7) rotate(45deg);
+  }
+}
 .testimonials .testBlock2 {
   align-self: flex-end;
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background: #1d8ea3;
   border-radius: 30px;
+  transition: 0.2s;
+}
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock2 {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 .testimonials .testBlock2 .testImg {
   background: url("../img/testimonial_2.jpg");
@@ -353,16 +412,36 @@ footer img {
   left: -410px;
   transform: scaleY(0.7) rotate(45deg);
 }
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock2::after {
+    content: "";
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: #1d8ea3;
+    position: relative;
+    left: -401px;
+    transform: scaleY(0.7) rotate(45deg);
+  }
+}
 .testimonials .testBlock3 {
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background: #df522d;
   border-radius: 30px;
+  transition: 0.2s;
+}
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock3 {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 .testimonials .testBlock3 .testImg {
   background: url("../img/testimonial_3.jpg");
@@ -381,17 +460,37 @@ footer img {
   left: 40px;
   transform: scaleY(0.7) rotate(45deg);
 }
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock3::after {
+    content: "";
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: #df522d;
+    position: relative;
+    left: 49px;
+    transform: scaleY(0.7) rotate(45deg);
+  }
+}
 .testimonials .testBlock4 {
   align-self: flex-end;
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background: #67b765;
   border-radius: 30px;
+  transition: 0.2s;
+}
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock4 {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 .testimonials .testBlock4 .testImg {
   background: url("../img/testimonial_4.jpg");
@@ -410,16 +509,36 @@ footer img {
   left: -410px;
   transform: scaleY(0.7) rotate(45deg);
 }
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock4::after {
+    content: "";
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: #67b765;
+    position: relative;
+    left: -401px;
+    transform: scaleY(0.7) rotate(45deg);
+  }
+}
 .testimonials .testBlock5 {
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background: #dc3766;
   border-radius: 30px;
+  transition: 0.2s;
+}
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock5 {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 .testimonials .testBlock5 .testImg {
   background: url("../img/testimonial_5.jpg");
@@ -438,33 +557,15 @@ footer img {
   left: 40px;
   transform: scaleY(0.7) rotate(45deg);
 }
-.container {
-  width: 100%;
-}
-.container .flexItems {
-  display: flex;
-  justify-content: space-between;
-}
-.container .flexItems .images {
-  margin-top: 45px;
-}
-.container .flexItems .images img {
-  width: 90%;
-}
-.container .flexItems .captureTheMoment {
-  margin-top: 95px;
-}
-.container .flexItems .captureTheMoment h2 {
-  font-family: "moon-bold", sans-serif;
-  font-size: 4.2rem;
-  color: #e77e48;
-}
-.container .flexItems .captureTheMoment p {
-  color: #474e81;
-  font-size: 3.2rem;
-  text-align: center;
-  font-family: serif;
-  margin-top: 40px;
-  line-height: 1.2;
-  letter-spacing: 1px;
+@media screen and (max-width: 970px) {
+  .testimonials .testBlock5::after {
+    content: "";
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: #dc3766;
+    position: relative;
+    left: 49px;
+    transform: scaleY(0.7) rotate(45deg);
+  }
 }

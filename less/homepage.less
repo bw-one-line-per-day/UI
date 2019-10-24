@@ -1,3 +1,4 @@
+// Header Section --KD
 .landing {
   width: 100;
   background: @color-background-light;
@@ -59,19 +60,57 @@
       margin-left: -200px;
       width: 650px;
       height: 450px;
-      // transform: translate(300px, -200px);
       background: url("../img/laptop.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 }
+//  --KD
 
+//Landing mid-section --AD
 .features {
   width: 100%;
   background: @color-background-dark;
-}
 
+  .flexItems {
+    margin-top: 40px;
+    .flexItems();
+    .debug(orange);
+
+    .images {
+      .debug(aqua);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .captureTheMoment {
+      width: 65%;
+      text-align: center;
+      .debug(red);
+      h2 {
+        font-family: @font-heading;
+        font-size: 3.8rem;
+        color: @color-heading;
+      }
+
+      p {
+        color: @color-text;
+        font-size: 3.2rem;
+        text-align: center;
+        font-family: @font-body;
+        margin-top: 40px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+//  --AD
+
+// Testimonial Section --KD
 .testimonials {
   width: 100%;
   background: @color-background-light;
@@ -87,12 +126,8 @@
     font-family: @font-heading;
     color: @color-heading;
     font-size: 4.5rem;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 40px 0 50px;
     text-align: center;
-  }
-  aside {
-    margin: 20px 70px;
   }
 
   .testImg {
@@ -121,6 +156,10 @@
 
     &::after {
       .arrow(#dc3766, 40px);
+      
+      @media screen and (max-width: 970px) {
+        .arrow(#dc3766, 49px);
+      }
     }
   }
 
@@ -134,6 +173,10 @@
 
     &::after {
       .arrow(#1d8ea3, -410px);
+      
+      @media screen and (max-width: 970px) {
+        .arrow(#1d8ea3, -401px);
+      }
     }
   }
 
@@ -146,6 +189,10 @@
 
     &::after {
       .arrow(#df522d, 40px);
+      
+      @media screen and (max-width: 970px) {
+        .arrow(#df522d, 49px);
+      }
     }
   }
 
@@ -159,6 +206,10 @@
 
     &::after {
       .arrow(#67b765, -410px);
+      
+      @media screen and (max-width: 970px) {
+        .arrow(#67b765, -401px);
+      }
     }
   }
 
@@ -171,42 +222,11 @@
 
     &::after {
       .arrow(#dc3766, 40px);
-    }
-  }
-}
-
-//Landing mid-section
-.container {
-  width: 100%;
-
-  .flexItems {
-    .flexItems();
-
-    .images {
-      margin-top: 45px;
-
-      img {
-        width: 90%;
-      }
-    }
-
-    .captureTheMoment {
-      margin-top: 95px;
-      h2 {
-        font-family: @font-heading;
-        font-size: 4.2rem;
-        color: @color-heading;
-      }
-
-      p {
-        color: @color-text;
-        font-size: 3.2rem;
-        text-align: center;
-        font-family: @font-body;
-        margin-top: 40px;
-        line-height: 1.2;
-        letter-spacing: 1px;
+      
+      @media screen and (max-width: 970px) {
+        .arrow(#dc3766, 49px);
       }
     }
   }
 }
+//  --KD

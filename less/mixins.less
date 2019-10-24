@@ -23,12 +23,19 @@
   z-index: 0;
   height: 150px;
   width: 450px;
+  margin: -20px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: @padding;
   background: @color;
   border-radius: 30px;
+  transition: 0.2s;
+
+  @media screen and (max-width: 970px) {
+    justify-content: center;
+    margin: 10px 40px;
+  }
 }
 
 .arrow(@color, @left) {
@@ -43,5 +50,7 @@
 }
 .flexItems() {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
