@@ -263,6 +263,11 @@ footer img {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 990px) {
+  .landing .heading::after {
+    background: green;
+  }
+}
 .features {
   width: 100%;
   background: #fed6d1;
