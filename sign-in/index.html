@@ -6,43 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Line A Day</title>
 
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
 
   <body>
     <div class="container">
-      <div class="signInBackground">
-        <header>
-          <div class="notebookLogo">
-            <img src="/img/Logo.png" alt="logo" />
-          </div>
-          <div>
-            <h1>ONE LINE A DAY</h1>
-          </div>
-        </header>
+      <header>
+        <div class="notebookLogo">
+          <img src="/img/Logo.png" alt="logo" />
+        </div>
+        <div class="topHeader">
+          <h1>ONE LINE A DAY</h1>
+        </div>
+      </header>
 
-        <section>
+      <section class="logIn">
+        <div class="midImg">
+          <img src="/img/Sign in image.png" alt="" />
+        </div>
+        <div class="welcomeBack">
           <div>
-            <img src="/img/Sign in image.png" alt="" />
+            <h2>WELCOME BACK!</h2>
           </div>
-          <div>
-            <h2>Welcome Back!</h2>
-            <div>
-              <input type="email" id="email" placeholder="email" required />
-            </div>
-            <div>
-              <input
-                type="password"
-                id="pw"
-                name="password"
-                minlength="8"
-                required
-              />
-            </div>
-            <button>Sign In</button>
+          <div class="inputEmail">
+            <input type="email" id="email" placeholder="EMAIL" required />
           </div>
-        </section>
-      </div>
+          <div class="inputPass">
+            <input
+              type="password"
+              id="pw"
+              name="password"
+              minlength="8"
+              required
+              placeholder="PASSWORD"
+            />
+          </div>
+          <div class="signInBtn">
+            <button>SIGN IN</button>
+          </div>
+          <div class="divider">
+            <h3>DON'T HAVE AN ACCOUNT? <a href="../sign-up/">SIGN UP</a></h3>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- <footer></footer> -->
