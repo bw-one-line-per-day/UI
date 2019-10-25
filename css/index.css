@@ -468,3 +468,7 @@ footer img {
   line-height: 1.2;
   letter-spacing: 1px;
 }
+.signInBackground header {
+  display: flex;
+  flex-direction: row;
+}
