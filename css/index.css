@@ -437,8 +437,10 @@ footer img {
   background: url("../img/testimonial_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(1) .testImg {
@@ -518,8 +520,10 @@ footer img {
   background: url("../img/testimonial_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(2) .testImg {
@@ -598,8 +602,10 @@ footer img {
   background: url("../img/testimonial_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(3) .testImg {
@@ -679,8 +685,10 @@ footer img {
   background: url("../img/testimonial_4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(4) .testImg {
@@ -759,8 +767,10 @@ footer img {
   background: url("../img/testimonial_5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(5) .testImg {
