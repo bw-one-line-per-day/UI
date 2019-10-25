@@ -772,3 +772,7 @@ footer img {
     display: none;
   }
 }
+.signInBackground header {
+  display: flex;
+  flex-direction: row;
+}
