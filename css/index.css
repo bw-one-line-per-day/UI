@@ -267,27 +267,29 @@ footer img {
   width: 100%;
   background: #fed6d1;
 }
-.features .flexItems {
+.features article {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-.features .flexItems .images img {
+.features article .images {
+  width: 37%;
+}
+.features article .images img {
   width: 100%;
 }
-.features .flexItems .captureTheMoment {
-  width: 65%;
+.features article .captureTheMoment {
   text-align: center;
 }
-.features .flexItems .captureTheMoment h2 {
+.features article .captureTheMoment h2 {
   font-family: "moon-bold", sans-serif;
   font-size: 3.8rem;
   color: #e77e48;
 }
-.features .flexItems .captureTheMoment p {
+.features article .captureTheMoment p {
   color: #474e81;
   font-size: 3.2rem;
   text-align: center;
@@ -295,6 +297,33 @@ footer img {
   margin-top: 40px;
   line-height: 1.2;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 800px) {
+  .features article .captureTheMoment h2 {
+    font-size: 3.2rem;
+  }
+  .features article .captureTheMoment p {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .features article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .features article .images {
+    order: 1;
+    width: 55%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .features article .images {
+    width: 65%;
+  }
 }
 .testimonials {
   width: 100%;

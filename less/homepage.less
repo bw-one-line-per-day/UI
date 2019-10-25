@@ -70,18 +70,18 @@
   width: 100%;
   background: @color-background-dark;
 
-  .flexItems {
+  article {
     margin-top: 40px;
-    .flexItems(row, no-wrap, space-between, center);
+    .flexItems(row, no-wrap, space-around, center);
 
     .images {
+      width: 37%;
       img {
         width: 100%;
       }
     }
 
     .captureTheMoment {
-      width: 65%;
       text-align: center;
       h2 {
         font-family: @font-heading;
@@ -97,6 +97,39 @@
         margin-top: 40px;
         line-height: 1.2;
         letter-spacing: 1px;
+      }
+    }
+  }
+
+  // Media Sizes --KD
+  @media @tablet {
+    article {
+      .captureTheMoment{
+        h2 {
+          font-size: 3.2rem;
+        }
+        p {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    article {
+      .flexItems(column, no-wrap, space-around, center);
+
+      .images {
+        order: 1;
+        width: 55%;
+        margin-top: 20px;
+      }
+    }
+  }
+  @media @mobile {
+    article {
+      .images {
+        width: 65%;
       }
     }
   }
