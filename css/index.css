@@ -195,9 +195,9 @@ footer img {
 .landing {
   width: 100;
   background: #fef3f4;
-  background-image: url(../img/landing_background.png);
-  background-repeat: no-repeat;
+  background: url("../img/landing_background.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .landing nav {
   width: 100%;
@@ -361,9 +361,9 @@ footer img {
 .testimonials {
   width: 100%;
   background: #fef3f4;
-  background-image: url(../img/testimonial_background.png);
-  background-repeat: no-repeat;
+  background: url("../img/testimonial_background.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .testimonials .container {
   position: relative;

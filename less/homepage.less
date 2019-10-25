@@ -2,9 +2,7 @@
 .landing {
   width: 100;
   background: @color-background-light;
-  background-image: url(../img/landing_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  .backgroundImg(url("../img/landing_background.png"), cover, no-repeat);
 
   nav {
     width: 100%;
@@ -69,9 +67,7 @@
       margin-left: -30%;
       width: 60%;
       height: 450px;
-      background: url("../img/laptop.png");
-      background-size: contain;
-      background-repeat: no-repeat;
+      .backgroundImg(url("../img/laptop.png"), contain, no-repeat);
       @media @tablet {
         display: none;
       }
@@ -155,9 +151,7 @@
 .testimonials {
   width: 100%;
   background: @color-background-light;
-  background-image: url(../img/testimonial_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  .backgroundImg(url("../img/testimonial_background.png"), cover, no-repeat);
 
   .container {
     position: relative;
