@@ -202,7 +202,10 @@ footer img {
 .landing nav {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: no-repeat;
   justify-content: flex-end;
+  align-items: center;
   margin: 30px 0;
   padding: 5px;
 }
@@ -225,6 +228,8 @@ footer img {
 .landing .heading div {
   display: flex;
   flex-direction: column;
+  flex-wrap: no-repeat;
+  justify-content: flex-start;
   align-items: center;
   width: 550px;
 }
@@ -266,12 +271,9 @@ footer img {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
+  flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid orange;
-}
-.features .flexItems .images {
-  border: 1px solid aqua;
 }
 .features .flexItems .images img {
   width: 100%;
@@ -279,7 +281,6 @@ footer img {
 .features .flexItems .captureTheMoment {
   width: 65%;
   text-align: center;
-  border: 1px solid red;
 }
 .features .flexItems .captureTheMoment h2 {
   font-family: "moon-bold", sans-serif;
@@ -318,6 +319,9 @@ footer img {
 }
 .testimonials .testText {
   display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
   align-items: center;
   background: #ffffff;
   width: 66%;
