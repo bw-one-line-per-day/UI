@@ -1,8 +1,10 @@
 .debug(@color) {
+  //Use this to quickly border elements that are giving you a hard time
   border: 1px solid @color;
 }
 
 .buttonGrad() {
+  //Home page 'Start Here' button
   background: @color-heading;
   background: linear-gradient(
     141deg,
@@ -11,15 +13,23 @@
   );
 }
 
-.testimonialImg(@url) {
-  background: url(@url);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 100%;
-  border: 5px solid @color-white;
+.backgroundImg(@type, @size, @repeat) {
+  //Single line background declaration! It can be an image, a color, or anything your heart desires...
+  background: @type;
+  background-size: @size;
+  background-repeat: @repeat;
+}
+
+.border(@width, @style, @color, @radius) {
+  // Single line borders with radius
+  border-width: @width;
+  border-style: @style;
+  border-color: @color;
+  border-radius: @radius;
 }
 
 .testBlock(@color, @padding) {
+  //Makes the testimonial bubbles
   z-index: 0;
   height: 150px;
   width: 450px;
@@ -28,10 +38,10 @@
   background: @color;
   border-radius: 30px;
   transition: 0.2s;
-  .flexItems(row,no-repeat,space-around,center);
+  .flexItems(row, no-repeat, space-around, center);
 
   @media screen and (max-width: 970px) {
-    .flexItems(row,no-repeat,center,center);
+    .flexItems(row, no-repeat, center, center);
     margin: 10px 40px;
   }
   @media screen and (max-width: 600px) {
@@ -43,6 +53,7 @@
 }
 
 .arrow(@color, @left) {
+  //Makes the nice little arrows that stick out of the testimonial bubbles :)
   content: "";
   z-index: -1;
   width: 40px;
@@ -56,7 +67,9 @@
     display: none;
   }
 }
+
 .flexItems(@direction, @wrap, @justify, @align) {
+  //MAKES THINGS FLEX WITH ONE LINE!!!
   display: flex;
   flex-direction: @direction;
   flex-wrap: @wrap;

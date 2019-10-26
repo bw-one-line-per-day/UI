@@ -195,9 +195,9 @@ footer img {
 .landing {
   width: 100;
   background: #fef3f4;
-  background-image: url(../img/landing_background.png);
-  background-repeat: no-repeat;
+  background: url("../img/landing_background.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .landing nav {
   width: 100%;
@@ -208,6 +208,15 @@ footer img {
   align-items: center;
   margin: 30px 0;
   padding: 5px;
+}
+@media screen and (max-width: 500px) {
+  .landing nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .landing nav a {
   color: #e77e48;
@@ -225,6 +234,15 @@ footer img {
 .landing .heading {
   display: flex;
 }
+@media screen and (max-width: 800px) {
+  .landing .heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .landing .heading div {
   display: flex;
   flex-direction: column;
@@ -239,9 +257,19 @@ footer img {
   color: #e77e48;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 500px) {
+  .landing .heading div h1 {
+    font-size: 5.5rem;
+  }
+}
 .landing .heading div h2 {
   font-size: 4.5rem;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 500px) {
+  .landing .heading div h2 {
+    font-size: 3.5rem;
+  }
 }
 .landing .heading div a {
   font-size: 2.5rem;
@@ -256,16 +284,16 @@ footer img {
 .landing .heading::after {
   content: "";
   position: relative;
-  margin-left: -200px;
-  width: 650px;
+  margin-left: -30%;
+  width: 60%;
   height: 450px;
   background: url("../img/laptop.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 800px) {
   .landing .heading::after {
-    background: green;
+    display: none;
   }
 }
 .features {
@@ -333,9 +361,9 @@ footer img {
 .testimonials {
   width: 100%;
   background: #fef3f4;
-  background-image: url(../img/testimonial_background.png);
-  background-repeat: no-repeat;
+  background: url("../img/testimonial_background.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .testimonials .container {
   position: relative;
@@ -409,8 +437,10 @@ footer img {
   background: url("../img/testimonial_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(1) .testImg {
@@ -490,8 +520,10 @@ footer img {
   background: url("../img/testimonial_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(2) .testImg {
@@ -570,8 +602,10 @@ footer img {
   background: url("../img/testimonial_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(3) .testImg {
@@ -651,8 +685,10 @@ footer img {
   background: url("../img/testimonial_4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(4) .testImg {
@@ -731,8 +767,10 @@ footer img {
   background: url("../img/testimonial_5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .testimonials aside:nth-of-type(5) .testImg {
@@ -772,22 +810,127 @@ footer img {
     display: none;
   }
 }
-body {
-  background-color: #fef3f4;
-  margin: 0 auto;
+.landing .aboutTitle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
 }
-body header {
+.landing .aboutTitle h1 {
+  font-size: 6.5rem;
+  font-family: "moon-bold", sans-serif;
+  color: #e77e48;
+  margin-bottom: 15px;
+}
+.landing .aboutTitle h2 {
+  font-family: "moon-bold", sans-serif;
+  font-size: 4.5rem;
+  margin-bottom: 25px;
+}
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/about_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 500px) {
+  .aboutInfo section:nth-of-type(1) {
+    padding-top: 40px;
+  }
+}
+.aboutInfo section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-repeat;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+.aboutInfo section h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "moon-bold", sans-serif;
+  color: #b44141;
+  margin-bottom: 40px;
+}
+.aboutInfo section article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-repeat;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .aboutInfo section article {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutInfo section article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-repeat;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.aboutInfo section article div {
+  order: 1;
+  width: 60%;
+}
+.aboutInfo section article div h2 {
+  font-family: "moon-bold", sans-serif;
+  color: #302d2d;
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+}
+.aboutInfo section article div p {
+  font-size: 2.7rem;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 500px) {
+  .aboutInfo section article div {
+    order: 2;
+    width: 85%;
+    border-bottom: 2px dashed #fed6d1;
+  }
+  .aboutInfo section article div h2 {
+    margin-top: 20px;
+  }
+}
+.aboutInfo section article .leftImg {
+  order: 1;
+}
+.aboutInfo section article img {
+  width: 35%;
+}
+@media screen and (max-width: 500px) {
+  .aboutInfo section article img {
+    width: 45%;
+  }
+}
+header {
   display: flex;
   justify-content: space-between;
 }
-body header .notebookLogo {
+header .notebookLogo {
   width: 10%;
 }
-body header .notebookLogo img {
+header .notebookLogo img {
   padding-top: 25px;
   width: 60%;
 }
-body header .topHeader {
+header .topHeader {
   text-align: center;
   font-family: "moon-bold", sans-serif;
   font-size: 5.5rem;
@@ -796,24 +939,24 @@ body header .topHeader {
   color: #e77e48;
   width: 100%;
 }
-body .logIn {
+.logIn {
   display: flex;
   align-items: center;
   width: 100%;
 }
-body .logIn .midImg {
+.logIn .midImg {
   width: 100%;
 }
-body .logIn .midImg img {
+.logIn .midImg img {
   width: 100%;
   margin-top: 70px;
 }
-body .logIn .welcomeBack {
+.logIn .welcomeBack {
   width: 60%;
   margin-top: 140px;
   margin-left: 60px;
 }
-body .logIn .welcomeBack h2 {
+.logIn .welcomeBack h2 {
   color: #d6a4c4;
   font-size: 3.5rem;
   font-family: "moon-bold", sans-serif;
@@ -821,11 +964,11 @@ body .logIn .welcomeBack h2 {
   width: 100%;
   text-align: center;
 }
-body .logIn .welcomeBack .inputText {
+.logIn .welcomeBack .inputText {
   padding-top: 30px;
   margin: 0 auto;
 }
-body .logIn .welcomeBack .inputText input {
+.logIn .welcomeBack .inputText input {
   border: 1px solid white;
   padding: 20px 2px 20px 20px;
   width: 100%;
@@ -833,15 +976,15 @@ body .logIn .welcomeBack .inputText input {
   border-radius: 10px;
   box-shadow: 2px 2px 4px #aaaaaa;
 }
-body .logIn .welcomeBack .inputText ::placeholder {
+.logIn .welcomeBack .inputText ::placeholder {
   color: #e5e5e5;
   font-family: "moon-bold", sans-serif;
 }
-body .logIn .welcomeBack .inputEmail {
+.logIn .welcomeBack .inputEmail {
   padding-top: 30px;
   margin: 0 auto;
 }
-body .logIn .welcomeBack .inputEmail input {
+.logIn .welcomeBack .inputEmail input {
   border: 1px solid white;
   padding: 20px 2px 20px 20px;
   width: 100%;
@@ -849,14 +992,14 @@ body .logIn .welcomeBack .inputEmail input {
   border-radius: 10px;
   box-shadow: 2px 2px 4px #aaaaaa;
 }
-body .logIn .welcomeBack .inputEmail ::placeholder {
+.logIn .welcomeBack .inputEmail ::placeholder {
   color: #e5e5e5;
   font-family: "moon-bold", sans-serif;
 }
-body .logIn .welcomeBack .inputPass {
+.logIn .welcomeBack .inputPass {
   margin-top: 30px;
 }
-body .logIn .welcomeBack .inputPass input {
+.logIn .welcomeBack .inputPass input {
   border: 1px solid white;
   padding: 20px 2px 20px 20px;
   width: 100%;
@@ -864,15 +1007,15 @@ body .logIn .welcomeBack .inputPass input {
   border-radius: 10px;
   box-shadow: 2px 2px 4px #aaaaaa;
 }
-body .logIn .welcomeBack .inputPass ::placeholder {
+.logIn .welcomeBack .inputPass ::placeholder {
   color: #e5e5e5;
   font-family: "moon-bold", sans-serif;
 }
-body .logIn .welcomeBack .signInBtn {
+.logIn .welcomeBack .signInBtn {
   text-align: center;
   margin-top: 35px;
 }
-body .logIn .welcomeBack .signInBtn button {
+.logIn .welcomeBack .signInBtn button {
   border: 1px solid #e77e48;
   background-color: #e77e48;
   opacity: 0.4;
@@ -883,22 +1026,22 @@ body .logIn .welcomeBack .signInBtn button {
   font-family: "moon-bold", sans-serif;
   border-radius: 10px;
 }
-body .logIn .welcomeBack .signInBtn button:hover {
+.logIn .welcomeBack .signInBtn button:hover {
   background-color: #e77e48;
   opacity: 0.8;
   color: white;
 }
-body .divider {
+.divider {
   border-top: 2px solid #e5e5e5;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
-body .divider h3 {
+.divider h3 {
   font-size: 1.5rem;
   padding-top: 20px;
 }
-body .divider h3 a {
+.divider h3 a {
   text-decoration: none;
   color: #e77e48;
   font-family: "moon-bold", sans-serif;

@@ -1,151 +1,146 @@
-body {
-  background-color: @color-background-light;
-  margin: 0 auto;
+header {
+  display: flex;
+  justify-content: space-between;
 
-  header {
-    display: flex;
-    justify-content: space-between;
-
-    .notebookLogo {
-      width: 10%;
-      img {
-        padding-top: 25px;
-        width: 60%;
-      }
-    }
-
-    .topHeader {
-      text-align: center;
-      font-family: @font-heading;
-      font-size: 5.5rem;
-      letter-spacing: 2px;
-      padding-top: 50px;
-      color: @color-heading;
-      width: 100%;
-    }
-  }
-
-  .logIn {
-    display: flex;
-
-    align-items: center;
-    width: 100%;
-
-    .midImg {
-      width: 100%;
-      img {
-        width: 100%;
-        margin-top: 70px;
-      }
-    }
-
-    .welcomeBack {
+  .notebookLogo {
+    width: 10%;
+    img {
+      padding-top: 25px;
       width: 60%;
+    }
+  }
 
-      margin-top: 140px;
-      margin-left: 60px;
+  .topHeader {
+    text-align: center;
+    font-family: @font-heading;
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    color: @color-heading;
+    width: 100%;
+  }
+}
 
-      h2 {
-        color: #d6a4c4;
-        font-size: 3.5rem;
-        font-family: @font-heading;
-        letter-spacing: 1.5px;
+.logIn {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+
+  .midImg {
+    width: 100%;
+    img {
+      width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  .welcomeBack {
+    width: 60%;
+
+    margin-top: 140px;
+    margin-left: 60px;
+
+    h2 {
+      color: #d6a4c4;
+      font-size: 3.5rem;
+      font-family: @font-heading;
+      letter-spacing: 1.5px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .inputText {
+      padding-top: 30px;
+      margin: 0 auto;
+      input {
+        border: 1px solid white;
+        padding: 20px 2px 20px 20px;
         width: 100%;
+        font-size: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #aaaaaa;
+      }
+
+      ::placeholder {
+        color: #e5e5e5;
+        font-family: @font-heading;
+      }
+    }
+
+    .inputEmail {
+      padding-top: 30px;
+      margin: 0 auto;
+      input {
+        border: 1px solid white;
+        padding: 20px 2px 20px 20px;
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #aaaaaa;
+      }
+
+      ::placeholder {
+        color: #e5e5e5;
+        font-family: @font-heading;
+      }
+    }
+
+    .inputPass {
+      margin-top: 30px;
+      input {
+        border: 1px solid white;
+        padding: 20px 2px 20px 20px;
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #aaaaaa;
+      }
+
+      ::placeholder {
+        color: #e5e5e5;
+        font-family: @font-heading;
+      }
+    }
+
+    .signInBtn {
+      text-align: center;
+      margin-top: 35px;
+
+      button {
+        border: 1px solid #e77e48;
+        background-color: @color-heading;
+        opacity: 0.4;
+        color: white;
         text-align: center;
-      }
+        padding: 15px 35px;
+        font-size: 2rem;
+        font-family: @font-heading;
+        border-radius: 10px;
 
-      .inputText {
-        padding-top: 30px;
-        margin: 0 auto;
-        input {
-          border: 1px solid white;
-          padding: 20px 2px 20px 20px;
-          width: 100%;
-          font-size: 2rem;
-          border-radius: 10px;
-          box-shadow: 2px 2px 4px #aaaaaa;
-        }
-
-        ::placeholder {
-          color: #e5e5e5;
-          font-family: @font-heading;
-        }
-      }
-
-      .inputEmail {
-        padding-top: 30px;
-        margin: 0 auto;
-        input {
-          border: 1px solid white;
-          padding: 20px 2px 20px 20px;
-          width: 100%;
-          font-size: 2rem;
-          border-radius: 10px;
-          box-shadow: 2px 2px 4px #aaaaaa;
-        }
-
-        ::placeholder {
-          color: #e5e5e5;
-          font-family: @font-heading;
-        }
-      }
-
-      .inputPass {
-        margin-top: 30px;
-        input {
-          border: 1px solid white;
-          padding: 20px 2px 20px 20px;
-          width: 100%;
-          font-size: 2rem;
-          border-radius: 10px;
-          box-shadow: 2px 2px 4px #aaaaaa;
-        }
-
-        ::placeholder {
-          color: #e5e5e5;
-          font-family: @font-heading;
-        }
-      }
-
-      .signInBtn {
-        text-align: center;
-        margin-top: 35px;
-
-        button {
-          border: 1px solid #e77e48;
+        &:hover {
           background-color: @color-heading;
-          opacity: 0.4;
+          opacity: 0.8;
           color: white;
-          text-align: center;
-          padding: 15px 35px;
-          font-size: 2rem;
-          font-family: @font-heading;
-          border-radius: 10px;
-
-          &:hover {
-            background-color: @color-heading;
-            opacity: 0.8;
-            color: white;
-          }
         }
       }
     }
   }
+}
 
-  .divider {
-    border-top: 2px solid #e5e5e5;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+.divider {
+  border-top: 2px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 
-    h3 {
-      font-size: 1.5rem;
-      padding-top: 20px;
-      a {
-        text-decoration: none;
-        color: #e77e48;
-        font-family: @font-heading;
-      }
+  h3 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    a {
+      text-decoration: none;
+      color: #e77e48;
+      font-family: @font-heading;
     }
   }
 }
