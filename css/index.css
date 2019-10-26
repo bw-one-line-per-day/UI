@@ -1046,3 +1046,12 @@ header .topHeader {
   color: #e77e48;
   font-family: "moon-bold", sans-serif;
 }
+@media screen and (max-width: 500px) {
+  .topHeader h1 {
+    font-size: 4rem;
+  }
+  .logIn {
+    display: flex;
+    flex-direction: column;
+  }
+}
