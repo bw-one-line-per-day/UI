@@ -919,7 +919,130 @@ footer img {
     width: 45%;
   }
 }
-.signInBackground header {
+header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+header .notebookLogo {
+  width: 10%;
+}
+header .notebookLogo img {
+  padding-top: 25px;
+  width: 60%;
+}
+header .topHeader {
+  text-align: center;
+  font-family: "moon-bold", sans-serif;
+  font-size: 5.5rem;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  color: #e77e48;
+  width: 100%;
+}
+.logIn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.logIn .midImg {
+  width: 100%;
+}
+.logIn .midImg img {
+  width: 100%;
+  margin-top: 70px;
+}
+.logIn .welcomeBack {
+  width: 60%;
+  margin-top: 140px;
+  margin-left: 60px;
+}
+.logIn .welcomeBack h2 {
+  color: #d6a4c4;
+  font-size: 3.5rem;
+  font-family: "moon-bold", sans-serif;
+  letter-spacing: 1.5px;
+  width: 100%;
+  text-align: center;
+}
+.logIn .welcomeBack .inputText {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.logIn .welcomeBack .inputText input {
+  border: 1px solid white;
+  padding: 20px 2px 20px 20px;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #aaaaaa;
+}
+.logIn .welcomeBack .inputText ::placeholder {
+  color: #e5e5e5;
+  font-family: "moon-bold", sans-serif;
+}
+.logIn .welcomeBack .inputEmail {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.logIn .welcomeBack .inputEmail input {
+  border: 1px solid white;
+  padding: 20px 2px 20px 20px;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #aaaaaa;
+}
+.logIn .welcomeBack .inputEmail ::placeholder {
+  color: #e5e5e5;
+  font-family: "moon-bold", sans-serif;
+}
+.logIn .welcomeBack .inputPass {
+  margin-top: 30px;
+}
+.logIn .welcomeBack .inputPass input {
+  border: 1px solid white;
+  padding: 20px 2px 20px 20px;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #aaaaaa;
+}
+.logIn .welcomeBack .inputPass ::placeholder {
+  color: #e5e5e5;
+  font-family: "moon-bold", sans-serif;
+}
+.logIn .welcomeBack .signInBtn {
+  text-align: center;
+  margin-top: 35px;
+}
+.logIn .welcomeBack .signInBtn button {
+  border: 1px solid #e77e48;
+  background-color: #e77e48;
+  opacity: 0.4;
+  color: white;
+  text-align: center;
+  padding: 15px 35px;
+  font-size: 2rem;
+  font-family: "moon-bold", sans-serif;
+  border-radius: 10px;
+}
+.logIn .welcomeBack .signInBtn button:hover {
+  background-color: #e77e48;
+  opacity: 0.8;
+  color: white;
+}
+.divider {
+  border-top: 2px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.divider h3 {
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.divider h3 a {
+  text-decoration: none;
+  color: #e77e48;
+  font-family: "moon-bold", sans-serif;
 }
